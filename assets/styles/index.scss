@@ -1,1 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
+
+.modal_login{
+  color:white !important;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav_list > li > a{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #0099cc !important;
+}
