@@ -8,4 +8,5 @@ const events = require('./events.js')
 $(document).ready(function() {
   $('#signup-form').submit(events.onSignUp)
   $('#signin-form').submit(events.onSignIn)
+  $('#signout').click(events.onSignOut)
 });

@@ -12,7 +12,17 @@ const signUpApi = function(data) {
 }
 
 const signOutApi = function(){
-
+  return $.ajax({
+      url: config.apiUrl + '/sign-out',
+      method: 'DELETE',
+      headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+      success: function() {
+        store.user = null
+        console.log("sign out successful")
+      }
+    })
 }
 
 const signInApi = function(data){

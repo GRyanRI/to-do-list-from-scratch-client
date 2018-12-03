@@ -85,9 +85,13 @@ const onSignIn = function(event) {
     return false;
   }
 }
-
+const onSignOut = function(event) {
+  event.preventDefault()
+  api.signOutApi()
+}
 
 module.exports = {
   onSignUp,
-  onSignIn
+  onSignIn,
+  onSignOut
 }
